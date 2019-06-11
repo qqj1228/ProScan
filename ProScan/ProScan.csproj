@@ -7,7 +7,7 @@
     <ProjectGuid>{A29C07FE-3FF2-4CF0-8F09-DF69E2724B6B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AssemblyName>ProScan</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>2.0</OldToolsVersion>
@@ -27,6 +27,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -205,6 +206,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Classes\SerialPort.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Controls\DGChartControl.resx">
@@ -328,6 +330,9 @@
     <Content Include="settings.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

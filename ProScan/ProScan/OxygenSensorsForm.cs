@@ -38,95 +38,95 @@ namespace ProScan
 
 		private void InitializeComponent()
 		{
-			this.o2TestResultsControl1 = new ProScan.O2TestResultsControl();
-			this.o2WaveformControl1 = new O2Waveform.O2WaveformControl();
-			this.lblOxygenSensor = new System.Windows.Forms.Label();
-			this.comboOxygenSensor = new System.Windows.Forms.ComboBox();
-			this.btnRead = new System.Windows.Forms.Button();
-			this.progressBar = new System.Windows.Forms.ProgressBar();
-			this.SuspendLayout();
-			// 
-			// o2TestResultsControl1
-			// 
-			this.o2TestResultsControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.o2TestResultsControl1 = new ProScan.O2TestResultsControl();
+            this.o2WaveformControl1 = new O2Waveform.O2WaveformControl();
+            this.lblOxygenSensor = new System.Windows.Forms.Label();
+            this.comboOxygenSensor = new System.Windows.Forms.ComboBox();
+            this.btnRead = new System.Windows.Forms.Button();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.SuspendLayout();
+            // 
+            // o2TestResultsControl1
+            // 
+            this.o2TestResultsControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.o2TestResultsControl1.Location = new System.Drawing.Point(10, 46);
-			this.o2TestResultsControl1.Name = "o2TestResultsControl1";
-			this.o2TestResultsControl1.Size = new System.Drawing.Size(615, 242);
-			this.o2TestResultsControl1.TabIndex = 0;
-			// 
-			// o2WaveformControl1
-			// 
-			this.o2WaveformControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.o2TestResultsControl1.Location = new System.Drawing.Point(10, 43);
+            this.o2TestResultsControl1.Name = "o2TestResultsControl1";
+            this.o2TestResultsControl1.Size = new System.Drawing.Size(615, 226);
+            this.o2TestResultsControl1.TabIndex = 0;
+            // 
+            // o2WaveformControl1
+            // 
+            this.o2WaveformControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.o2WaveformControl1.LabelColor = System.Drawing.Color.Yellow;
-			this.o2WaveformControl1.LabelFont = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.o2WaveformControl1.LeanBGColor = System.Drawing.Color.Black;
-			this.o2WaveformControl1.LineColor = System.Drawing.Color.White;
-			this.o2WaveformControl1.Location = new System.Drawing.Point(10, 295);
-			this.o2WaveformControl1.MidBGColor = System.Drawing.Color.Gray;
-			this.o2WaveformControl1.Name = "o2WaveformControl1";
-			this.o2WaveformControl1.RichBGColor = System.Drawing.Color.Black;
-			this.o2WaveformControl1.Size = new System.Drawing.Size(615, 116);
-			this.o2WaveformControl1.TabIndex = 1;
-			this.o2WaveformControl1.TitleColor = System.Drawing.Color.DodgerBlue;
-			this.o2WaveformControl1.TitleFont = new System.Drawing.Font("Arial", 10F);
-			this.o2WaveformControl1.WaveColor = System.Drawing.Color.White;
-			// 
-			// lblOxygenSensor
-			// 
-			this.lblOxygenSensor.Location = new System.Drawing.Point(6, 12);
-			this.lblOxygenSensor.Name = "lblOxygenSensor";
-			this.lblOxygenSensor.Size = new System.Drawing.Size(108, 23);
-			this.lblOxygenSensor.TabIndex = 2;
-			this.lblOxygenSensor.Text = "&Oxygen Sensor:";
-			this.lblOxygenSensor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// comboOxygenSensor
-			// 
-			this.comboOxygenSensor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.o2WaveformControl1.LabelColor = System.Drawing.Color.Yellow;
+            this.o2WaveformControl1.LabelFont = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.o2WaveformControl1.LeanBGColor = System.Drawing.Color.Black;
+            this.o2WaveformControl1.LineColor = System.Drawing.Color.White;
+            this.o2WaveformControl1.Location = new System.Drawing.Point(10, 275);
+            this.o2WaveformControl1.MidBGColor = System.Drawing.Color.Gray;
+            this.o2WaveformControl1.Name = "o2WaveformControl1";
+            this.o2WaveformControl1.RichBGColor = System.Drawing.Color.Black;
+            this.o2WaveformControl1.Size = new System.Drawing.Size(615, 139);
+            this.o2WaveformControl1.TabIndex = 1;
+            this.o2WaveformControl1.TitleColor = System.Drawing.Color.DodgerBlue;
+            this.o2WaveformControl1.TitleFont = new System.Drawing.Font("Arial", 10F);
+            this.o2WaveformControl1.WaveColor = System.Drawing.Color.White;
+            // 
+            // lblOxygenSensor
+            // 
+            this.lblOxygenSensor.Location = new System.Drawing.Point(6, 11);
+            this.lblOxygenSensor.Name = "lblOxygenSensor";
+            this.lblOxygenSensor.Size = new System.Drawing.Size(108, 22);
+            this.lblOxygenSensor.TabIndex = 2;
+            this.lblOxygenSensor.Text = "&Oxygen Sensor:";
+            this.lblOxygenSensor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // comboOxygenSensor
+            // 
+            this.comboOxygenSensor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.comboOxygenSensor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboOxygenSensor.Location = new System.Drawing.Point(120, 10);
-			this.comboOxygenSensor.Name = "comboOxygenSensor";
-			this.comboOxygenSensor.Size = new System.Drawing.Size(406, 24);
-			this.comboOxygenSensor.TabIndex = 3;
-			// 
-			// btnRead
-			// 
-			this.btnRead.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnRead.Location = new System.Drawing.Point(535, 9);
-			this.btnRead.Name = "btnRead";
-			this.btnRead.Size = new System.Drawing.Size(90, 24);
-			this.btnRead.TabIndex = 4;
-			this.btnRead.Text = "&Read";
-			this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
-			// 
-			// progressBar
-			// 
-			this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.comboOxygenSensor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboOxygenSensor.Location = new System.Drawing.Point(120, 9);
+            this.comboOxygenSensor.Name = "comboOxygenSensor";
+            this.comboOxygenSensor.Size = new System.Drawing.Size(406, 20);
+            this.comboOxygenSensor.TabIndex = 3;
+            // 
+            // btnRead
+            // 
+            this.btnRead.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRead.Location = new System.Drawing.Point(535, 8);
+            this.btnRead.Name = "btnRead";
+            this.btnRead.Size = new System.Drawing.Size(90, 23);
+            this.btnRead.TabIndex = 4;
+            this.btnRead.Text = "&Read";
+            this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
+            // 
+            // progressBar
+            // 
+            this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.progressBar.Location = new System.Drawing.Point(10, 416);
-			this.progressBar.Name = "progressBar";
-			this.progressBar.Size = new System.Drawing.Size(615, 26);
-			this.progressBar.TabIndex = 5;
-			// 
-			// OxygenSensorsForm
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
-			this.ClientSize = new System.Drawing.Size(634, 448);
-			this.ControlBox = false;
-			this.Controls.Add(this.progressBar);
-			this.Controls.Add(this.btnRead);
-			this.Controls.Add(this.comboOxygenSensor);
-			this.Controls.Add(this.lblOxygenSensor);
-			this.Controls.Add(this.o2WaveformControl1);
-			this.Controls.Add(this.o2TestResultsControl1);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.Name = "OxygenSensorsForm";
-			this.Text = "Oxygen Sensor Tests";
-			this.ResumeLayout(false);
+            this.progressBar.Location = new System.Drawing.Point(10, 418);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(615, 25);
+            this.progressBar.TabIndex = 5;
+            // 
+            // OxygenSensorsForm
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(6, 14);
+            this.ClientSize = new System.Drawing.Size(634, 448);
+            this.ControlBox = false;
+            this.Controls.Add(this.progressBar);
+            this.Controls.Add(this.btnRead);
+            this.Controls.Add(this.comboOxygenSensor);
+            this.Controls.Add(this.lblOxygenSensor);
+            this.Controls.Add(this.o2WaveformControl1);
+            this.Controls.Add(this.o2TestResultsControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "OxygenSensorsForm";
+            this.Text = "Oxygen Sensor Tests";
+            this.ResumeLayout(false);
 
 		}
 		#endregion

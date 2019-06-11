@@ -35,14 +35,15 @@ namespace ProScan
 				m_CommELM.setPort(iPort);
 				m_CommELM.setBaudRate(iBaud);
 
-				if (m_CommELM.Open())
+                // 原代码为if (!m_CommELM.Open())
+                if (!m_CommELM.Open())
 					return false;
 
 				if (!confirmAT("ATWS")
 				|| !confirmAT("ATE0")
 				|| !confirmAT("ATL0")
 				|| !confirmAT("ATH1")
-				|| !confirmAT("ATCAF1")
+				//|| !confirmAT("ATCAF1")
 					)
 				{
 					m_CommELM.Close();
@@ -57,11 +58,11 @@ namespace ProScan
 						m_CommELM.Close();
 						return false;
 					}
-					m_CommELM.Close();
+					//m_CommELM.Close();
 
 					m_CommELM.setTimeout(5000);
-					if (!m_CommELM.Open())
-						return false;
+					//if (!m_CommELM.Open())
+					//	return false;
 
 					bool flag = false;
 					if (getOBDResponse("0100").IndexOf("4100") >= 0)
@@ -69,11 +70,11 @@ namespace ProScan
 						flag = true;
 						setProtocol((ProtocolType)int.Parse(getOBDResponse("ATDPN").Replace("A", "")));
 					}
-					m_CommELM.Close();
+					//m_CommELM.Close();
 
 					m_CommELM.setTimeout(500);
-					if (!m_CommELM.Open())
-						flag = false;
+					//if (!m_CommELM.Open())
+					//	flag = false;
 					return flag;
 				}
 				if (!confirmAT("ATM0"))
@@ -81,11 +82,11 @@ namespace ProScan
 					m_CommELM.Close();
 					return false;
 				}
-				m_CommELM.Close();
+				//m_CommELM.Close();
 
 				m_CommELM.setTimeout(5000);
-				if (!m_CommELM.Open())
-					return false;
+				//if (!m_CommELM.Open())
+				//	return false;
 
 				int[] xattr = new int[] { 6, 7, 2, 3, 1, 8, 9, 4, 5 };
 				for (int idx = 0; idx < xattr.Length; idx++)
@@ -99,10 +100,10 @@ namespace ProScan
 					if (getOBDResponse("0100").IndexOf("4100") >= 0)
 					{
 						setProtocol((ProtocolType)xattr[idx]);
-						m_CommELM.Close();
+						//m_CommELM.Close();
 						m_CommELM.setTimeout(500);
-						if (!m_CommELM.Open())
-							return false;
+						//if (!m_CommELM.Open())
+						//	return false;
 
 						confirmAT("ATM1");
 						return true;

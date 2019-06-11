@@ -28,8 +28,11 @@ namespace ProScan
 		private UserPreferences m_userpreferences;
 		private Preferences m_settings;
 		private List<VehicleProfile> m_VehicleProfiles;
+        public bool ConnectedStatus {
+            get { return m_obdDevice.Connected(); }
+        }
 
-		public event OBDInterface.__Delegate_OnDisconnect OnDisconnect;
+        public event OBDInterface.__Delegate_OnDisconnect OnDisconnect;
 		public event OBDInterface.__Delegate_OnConnect OnConnect;
 
 		public OBDInterface()
@@ -397,11 +400,6 @@ namespace ProScan
 					m_obdDevice = new OBDDeviceELM327(m_commLog);
 					break;
 			}
-		}
-
-		public bool ConnectedStatus
-		{
-			get { return m_obdDevice.Connected(); }
 		}
 
 		public int LoadDTCDefinitions(string fileName)

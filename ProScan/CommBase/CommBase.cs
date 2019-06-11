@@ -194,6 +194,7 @@ namespace ProScan
 				m_RxThread = (Thread)null;
 			}
 			Win32Com.CloseHandle(m_hPort);
+            m_hPort = (IntPtr)(-1);
 			if (m_ptrUWO != IntPtr.Zero)
 				Marshal.FreeHGlobal(m_ptrUWO);
 		}
